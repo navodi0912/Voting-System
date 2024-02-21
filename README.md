@@ -1,2 +1,2 @@
-# Header
-Header creating 
+# "Sparkle" Voting System
+Languages - HTML / CSS / PHP
