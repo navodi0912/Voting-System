@@ -1,0 +1,99 @@
+.container {
+    /* width: 100%; */
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} 
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+.col-1 {
+	float: left;
+	width: 8.33%;
+}
+.col-2 {
+	float: left;
+	width: 16.66%;
+}
+.col-3 {
+	float: left;
+	width: 25%;
+}
+.col-4 {
+	float: left;
+	width: 33.33%;
+}
+.col-5 {
+	float: left;
+	width: 41.66%;
+}
+.col-6 {
+	float: left;
+	width: 50%;
+}
+.col-7 {
+	float: left;
+	width: 58.33%;
+}
+.col-8 {
+	float: left;
+	width: 66.66%;
+}
+.col-9 {
+	float: left;
+	width: 75%;
+}
+.col-10 {
+	float: left;
+	width: 83.33%;
+}
+.col-11 {
+	float: left;
+	width: 91.66%;
+}
+.col-12 {
+	float: left;
+	width: 100%;
+}
+
+
+/* Responsive Media Query for all */
+@media (max-width: 600px) {
+	.col-3 , .col-4 , .col-6, .col-8 {
+		width: 100%;
+	}
+
+}
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+@media (max-width: 767.08px) { 
+
+}
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+@media (max-width: 991.98px) { 
+
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}

@@ -1,0 +1,360 @@
+
+/*_____________________ pop up image styles _____________________*/
+
+.popup_image
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.99);
+    height: 100%;
+    width: 100%;
+    display: none;
+    
+}
+
+.popup_image img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-height: 900px;
+    min-height: 700px;
+    border-radius: 5px;
+    border: 2px solid #f43729;
+    object-fit: cover;
+}
+
+.popup_image span
+{
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    font-size: 50px;
+    color: #f43729;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;   
+}
+
+
+/*_____________________ trnding page pop up video styles _____________________*/
+
+.popup_video
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.99);
+    height: 100%;
+    width: 100%;
+    display: none;
+    
+}
+
+.popup_video video
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1200px;
+    border-radius: 5px;
+    border: 2px solid #f43729;
+    object-fit: cover;
+}
+
+.popup_close_but 
+{
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    font-size: 50px;
+    color: #f43729;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;  
+    display: none;  
+}
+
+
+/*_____________________ trending page styles _____________________*/
+
+.video_part
+{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+    border-radius: 20px;
+    box-shadow: 4px 3px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 900px)
+{
+    .video_part
+    {
+        display: inline-block;    
+    }     
+}
+
+.video_text
+{
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;   
+    margin-top: 20px;
+    margin-left: 20px;
+    color: black;
+}
+.video_views
+{
+    font-size: smaller;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;   
+    margin-top: 20px;
+    margin-left: 20px;
+    color: black;
+    
+
+}
+
+.video_description
+{
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;   
+    flex-basis: 1000px;
+    flex-direction: column;
+}
+
+.video
+{
+    flex-basis: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+    height: auto;
+    width: 200px;
+    border: 1px solid #00193f;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.video video
+{
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;    
+}
+
+.video:hover video
+{
+    transform: scale(1.1);
+}
+
+
+/*_____________________ highlights page styles _____________________*/
+
+.main_slider
+{
+    margin: 0px;
+    padding: 0px;
+}
+.main_slider .slides
+{   
+    animation-duration:3s;
+    display:none;
+    overflow:hidden;
+    animation-name:fade;
+}
+    
+.main_slider .slides img
+{
+    
+    width:100%;
+    height: 100%;
+    max-width: 2000px;
+    max-height: 570px;
+    right: 0;    
+}
+
+.row
+{
+    margin-left: 40px;
+}
+
+.column
+{
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+  
+.column img 
+{
+    cursor: pointer;
+    width: 400px;
+    height: auto;
+    border: 2px solid #00193f;
+    margin-top: 10px;
+    transition: .2s linear; 
+}
+
+.column img:hover
+{
+    transform: scale(1.05);
+}
+
+.column video
+{
+    margin-top: 10px;
+    width: 400px;
+    height: auto;
+    border: 2px solid #f43729;
+}
+  
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media only screen and (max-width: 1710px)
+{
+    .column
+    {
+        width: 33%;
+    }
+}
+
+@media only screen and (max-width: 1320px)
+{
+    .column
+    {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 900px)
+{
+    .column
+    {
+        width: 100%;     
+    }     
+}
+
+
+/*_____________________ songs page pop up video styles _____________________*/
+
+.spopup_video
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.99);
+    height: 100%;
+    width: 100%;
+    display: none;
+    
+}
+
+.spopup_video video
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1200px;
+    border-radius: 5px;
+    border: 2px solid #f43729;
+    object-fit: cover;
+}
+
+.spopup_close_but 
+{
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    font-size: 50px;
+    color: #f43729;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;  
+    display: none;  
+}
+
+/*_____________________ songs page styles _____________________*/
+
+hr
+{
+    height: 3px;
+    margin-top: 10px;
+    background-color: #00193f;
+}
+
+.text_date
+{
+    margin:20px 0 30px 200px;
+   
+}
+
+.song_vid
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    
+        
+}
+.song_vid .svideo
+{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    margin: 10px; 
+    border-radius: 20px;
+    box-shadow: 4px 3px 8px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden; 
+} 
+
+.song_vid video
+{
+    margin: 10px;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #f43729;
+    transition: .2s linear;
+    cursor: pointer;
+    
+}
+
+.svideo:hover
+{
+    transform: scale(1.04);
+}
+
+.song_vid .svideo .song_vid_text1
+{  
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.song_vid .svideo .song_vid_text2
+{  
+    margin-left: 10px;
+    font-size: 12px;   
+}
+
+
